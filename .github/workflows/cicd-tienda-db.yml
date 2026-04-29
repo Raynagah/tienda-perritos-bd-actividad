@@ -39,7 +39,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/bd:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/bd-tienda-perritos:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/bd:v${{ github.run_number }}
             ${{ secrets.ECR_REPO_URL_DB }}:latest
 

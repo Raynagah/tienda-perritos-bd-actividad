@@ -40,7 +40,7 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/bd-tienda-perritos:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/bd:v${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/bd-tienda-perritos:v${{ github.run_number }}
             ${{ secrets.ECR_REPO_URL_DB }}:latest
 
       # 3. Despliegue en AWS vía SSM
